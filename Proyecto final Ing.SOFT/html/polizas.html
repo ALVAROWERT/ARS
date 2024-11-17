@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Póliza</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <div class="login-image">
+      <img src="/assets/doctor.jpg" alt="Doctor trabajando">
+      <p>"En <strong>Ars Salud Care</strong>, Tu salud es nuestra prioridad"</p>
+    </div>
+    <div class="login-form-container">
+      <div class="logo">
+        <img src="/assets/logo.png" alt="ARS Salud Care Logo">
+      </div>
+      <h2>Registrar Póliza</h2>
+      <form id="poliza-form">
+        <label for="id-afiliado">ID Afiliado</label>
+        <input type="text" id="id-afiliado" required>
+
+        <label for="nombre">Nombre del Afiliado</label>
+        <input type="text" id="nombre" required>
+
+        <label for="apellido">Apellido del Afiliado</label>
+        <input type="text" id="apellido" required>
+
+        <label for="fecha-creacion">Fecha de Creación</label>
+        <input type="date" id="fecha-creacion" required>
+
+        <button type="submit">Registrar Póliza</button>
+      </form>
+
+      <!-- Mensaje de confirmación -->
+      <div id="alerta-poliza" class="alert" style="display: none;">
+        <p>¡Póliza registrada exitosamente!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/polizas.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generar Reporte</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <div class="login-form-container">
+      <h2>Generar Reporte</h2>
+      <form id="reporteria-form">
+        <label for="reporte-seleccion">Seleccionar Reporte</label>
+        <select id="reporte-seleccion" required>
+          <option value="afiliados">Afiliados</option>
+          <option value="polizas">Pólizas</option>
+          <option value="reclamaciones">Reclamaciones</option>
+        </select>
+
+        <button type="submit">Generar Reporte</button>
+      </form>
+
+      <!-- Contenedor donde se muestra el reporte -->
+      <div id="reporte-contenido" style="display:none;">
+        <h3>Reporte Generado</h3>
+        <div id="reporte-datos"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Todos los derechos reservados - ARS Grupo 4 &copy; 2024</p>
+  </footer>
+
+  <script src="../js/reporteria.js"></script>
+</body>
+</html>
